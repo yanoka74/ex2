@@ -46,8 +46,8 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 02-01-PLAN.md — Flask 앱 백엔드 + Jinja2 템플릿 + 통합 테스트
-- [ ] 02-02-PLAN.md — 브라우저에서 전체 UI/UX 수동 검증 (checkpoint)
+- [x] 02-01-PLAN.md — Flask 앱 백엔드 + Jinja2 템플릿 + 통합 테스트
+- [x] 02-02-PLAN.md — 브라우저에서 전체 UI/UX 수동 검증 (checkpoint)
 
 ### Phase 3: Usability Enhancements
 **Goal**: 결과 테이블의 정렬, 합계 확인, 엑셀 다운로드로 일상 업무에서 편리하게 활용할 수 있다
