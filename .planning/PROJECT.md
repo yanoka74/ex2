@@ -12,15 +12,14 @@
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] 판매자 고유코드 기준 중복 행 제거 — Validated in Phase 1: Core Processing Pipeline
+- [x] 판매자 고유코드별 판매수량(고객 주문 수량) 합계 계산 — Validated in Phase 1: Core Processing Pipeline
+- [x] 상품명 등 참고 정보 함께 표시 — Validated in Phase 1: Core Processing Pipeline
 
 ### Active
 
 - [ ] 엑셀 파일(.xlsx) 업로드 기능
-- [ ] 판매자 고유코드 기준 중복 행 제거
-- [ ] 판매자 고유코드별 판매수량(고객 주문 수량) 합계 계산
 - [ ] 결과를 테이블 형태로 웹 페이지에 표시
-- [ ] 상품명 등 참고 정보 함께 표시
 
 ### Out of Scope
 
@@ -68,4 +67,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-10 after initialization*
+*Last updated: 2026-04-10 after Phase 1 completion*
