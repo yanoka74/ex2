@@ -30,7 +30,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 1 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — TDD로 pandas 데이터 처리 모듈 구현 (process_sales_data 함수)
+- [x] 01-01-PLAN.md — TDD로 pandas 데이터 처리 모듈 구현 (process_sales_data 함수)
 
 ### Phase 2: Web Interface
 **Goal**: 사용자가 웹 브라우저에서 엑셀 파일을 업로드하고 처리 결과를 테이블로 확인할 수 있다
