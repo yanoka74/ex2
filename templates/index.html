@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>판매정보 분석기</title>
+</head>
+<body>
+    <header>판매정보 분석기</header>
+
+    {% if error %}
+    <div class="error-banner">{{ error }}</div>
+    {% endif %}
+
+    {% if results %}
+    <div class="summary">
+        전체 {{ summary.total_rows }}건
+        {% if summary.skipped_rows > 0 %}({{ summary.skipped_rows }}건 제외){% endif %}
+        &rarr; 중복 제거 후 {{ summary.result_rows }}건, {{ unique_codes }}개 고유코드
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>마켓명</th>
+                <th>판매자 고유코드</th>
+                <th>상품명</th>
+                <th>주문수량 합계</th>
+                <th>최근 주문일</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in results %}
+            <tr>
+                <td>{{ row["마켓명"] }}</td>
+                <td>{{ row["판매자 고유코드"] }}</td>
+                <td>{{ row["상품명"] }}</td>
+                <td>{{ row["주문수량 합계"] | comma }}</td>
+                <td>{{ row["최근 주문일"].strftime("%Y-%m-%d") if row["최근 주문일"] is not none else "" }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/">새 파일 업로드</a>
+    {% else %}
+    <p>엑셀 파일(.xlsx)을 선택하거나 이 페이지에 드래그하세요</p>
+    <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" id="file-input" name="file" accept=".xlsx" hidden>
+        <button type="button" id="select-btn" onclick="document.getElementById('file-input').click()">파일 선택</button>
+    </form>
+    {% endif %}
+</body>
+</html>
