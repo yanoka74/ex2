@@ -42,11 +42,12 @@ Plans:
   3. 잘못된 파일(확장자 오류, 빈 파일, 필수 컬럼 누락) 업로드 시 한국어 에러 메시지가 표시된다
   4. 처리 결과가 HTML 테이블로 웹 페이지에 표시된다
   5. 처리 건수 요약(전체 N건, 중복 제거 후 M건, K개 고유코드)이 표시된다
-**Plans**: TBD
+**Plans:** 2 plans
 **UI hint**: yes
 
 Plans:
-- [ ] 02-01: TBD
+- [ ] 02-01-PLAN.md — Flask 앱 백엔드 + Jinja2 템플릿 + 통합 테스트
+- [ ] 02-02-PLAN.md — 브라우저에서 전체 UI/UX 수동 검증 (checkpoint)
 
 ### Phase 3: Usability Enhancements
 **Goal**: 결과 테이블의 정렬, 합계 확인, 엑셀 다운로드로 일상 업무에서 편리하게 활용할 수 있다
@@ -70,5 +71,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Core Processing Pipeline | 0/1 | Not started | - |
-| 2. Web Interface | 0/0 | Not started | - |
+| 2. Web Interface | 0/2 | Not started | - |
 | 3. Usability Enhancements | 0/0 | Not started | - |
