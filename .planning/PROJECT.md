@@ -18,8 +18,12 @@
 
 ### Active
 
-- [ ] 엑셀 파일(.xlsx) 업로드 기능
-- [ ] 결과를 테이블 형태로 웹 페이지에 표시
+(Phase 3에서 추가 기능 구현 예정)
+
+### Validated in Phase 2
+
+- [x] 엑셀 파일(.xlsx) 업로드 기능 — Validated in Phase 2: Web Interface
+- [x] 결과를 테이블 형태로 웹 페이지에 표시 — Validated in Phase 2: Web Interface
 
 ### Out of Scope
 
@@ -67,4 +71,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-10 after Phase 1 completion*
+*Last updated: 2026-04-10 after Phase 2 completion*
