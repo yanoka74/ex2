@@ -91,6 +91,7 @@ def test_results_table(client, xlsx_factory):
     assert "마켓명" in html
     assert "판매자 고유코드" in html
     assert "상품명" in html
+    assert "주문건수" in html
     assert "주문수량 합계" in html
     assert "최근 주문일" in html
 

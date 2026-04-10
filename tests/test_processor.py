@@ -106,7 +106,7 @@ class TestResultColumns:
         path = xlsx_factory(rows)
         result_df, summary = process_sales_data(path)
 
-        expected_columns = ["마켓명", "판매자 고유코드", "상품명", "주문수량 합계", "최근 주문일"]
+        expected_columns = ["마켓명", "판매자 고유코드", "상품명", "주문건수", "주문수량 합계", "최근 주문일"]
         assert list(result_df.columns) == expected_columns
 
 

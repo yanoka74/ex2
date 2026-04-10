@@ -2,7 +2,7 @@ import pandas as pd
 
 REQUIRED_COLUMNS = ["마켓명", "판매자 고유코드", "상품명", "주문수량", "주문일"]
 
-RESULT_COLUMNS = ["마켓명", "판매자 고유코드", "상품명", "주문수량 합계", "최근 주문일"]
+RESULT_COLUMNS = ["마켓명", "판매자 고유코드", "상품명", "주문건수", "주문수량 합계", "최근 주문일"]
 
 
 def process_sales_data(file_path):
@@ -62,6 +62,7 @@ def process_sales_data(file_path):
             "마켓명": group.name[1],
             "판매자 고유코드": group.name[0],
             "상품명": group.loc[latest_idx, "상품명"],
+            "주문건수": len(group),
             "주문수량 합계": group["주문수량"].sum(),
             "최근 주문일": group["주문일"].max(),
         })
