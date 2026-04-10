@@ -27,10 +27,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. 동일 고유코드의 주문수량이 산술적으로 합산된다 (문자열 연결이 아닌 숫자 덧셈)
   3. 각 고유코드에 해당하는 상품명이 결과에 포함된다
   4. 중복 상품의 경우 가장 최근 주문일이 결과에 포함된다
-**Plans**: TBD
+**Plans:** 1 plans
 
 Plans:
-- [ ] 01-01: TBD
+- [ ] 01-01-PLAN.md — TDD로 pandas 데이터 처리 모듈 구현 (process_sales_data 함수)
 
 ### Phase 2: Web Interface
 **Goal**: 사용자가 웹 브라우저에서 엑셀 파일을 업로드하고 처리 결과를 테이블로 확인할 수 있다
@@ -69,6 +69,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Core Processing Pipeline | 0/0 | Not started | - |
+| 1. Core Processing Pipeline | 0/1 | Not started | - |
 | 2. Web Interface | 0/0 | Not started | - |
 | 3. Usability Enhancements | 0/0 | Not started | - |
